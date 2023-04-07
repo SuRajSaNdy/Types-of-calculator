@@ -1,0 +1,37 @@
+# define function for addition operation
+def add(num1, num2):
+    return num1 + num2
+
+# define function for subtraction operation
+def subtract(num1, num2):
+    return num1 - num2
+
+# define function for multiplication operation
+def multiply(num1, num2):
+    return num1 * num2
+
+# define function for division operation
+def divide(num1, num2):
+    if num2 == 0:
+        return "Cannot divide by zero"
+    return num1 / num2
+
+# get user input for numbers and operation
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+operation = input("Enter operation (+, -, *, /): ")
+
+# perform operation based on user input
+if operation == '+':
+    result = add(num1, num2)
+elif operation == '-':
+    result = subtract(num1, num2)
+elif operation == '*':
+    result = multiply(num1, num2)
+elif operation == '/':
+    result = divide(num1, num2)
+else:
+    result = "Invalid operation"
+
+# print result
+print("Result:", result)
